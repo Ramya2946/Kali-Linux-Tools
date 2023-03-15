@@ -1,2 +1,14 @@
 # <p align="left"> 01 Information Gathering </p>
- 
+- **who is**
+- **nbtscan**
+- **fping**
+- **tcptraceroute**
+- **traceroute**
+- **xprobe2**
+- **tcpdump**
+- **tshark**
+- **dnsenum**
+- **dnsrecon**
+- **dnstracer**
+- **enum4linux**
+- 
