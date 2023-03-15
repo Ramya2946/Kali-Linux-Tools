@@ -70,8 +70,8 @@
 - **crunch**
 - **rsmangler**
 
- <p align="left"> 06 Wireless Attacks</p>
-## **802.11 WIreless Tools**
+# <p align="left"> 06 Wireless Attacks</p>
+## **802.11 Wireless Tools**
 - **bully**
 - **fern wifi cracker(root)**
 - 
@@ -80,32 +80,32 @@
 - **spooftooph**
 - **reaver**
 
-<p align="left"> 07 Reverse Engineering</p>
+# <p align="left"> 07 Reverse Engineering</p>
 - **clang**
 - **NASM shell**
 
 
- <p align="left"> 08 Exploitation Tools</p>
+# <p align="left"> 08 Exploitation Tools</p>
 - **crackmapexec**
 - **metasploit framework**
 - **msf payload creator**
 
- <p align="left"> 09 Sniffing & Spoofing</p>
+# <p align="left"> 09 Sniffing & Spoofing</p>
 ## **Network Sniffers**
 - **dnschef**
 - **netsniff-ng**
-- 
+ 
 ## **Spoofing & MITM**
 - **rebind**
 - **sslsplit**
 - **tcpreplay**
 
 
- <p align="left"> 10 Post Exploitation</p>
+# <p align="left"> 10 Post Exploitation</p>
 ## **OS Backdoors**
 - **dbd**
 - **powersploit**
-- 
+ 
 ## **Tunneling & Exfiltration**
 - **dns2tcpc**
 - **iodine**
@@ -115,7 +115,7 @@
 - **laundanum**
 - **weevely**
 
-<p align="left"> 11 Forensics</p>
+# <p align="left"> 11 Forensics</p>
 ## **Forensic Craving Tools**
 - **magicrescue**
 - **scalpel**
@@ -133,12 +133,12 @@
 - **blkcat**
 - **blkcalc**
 
-<p align="left"> 12 Reporting Tools</p>
+# <p align="left"> 12 Reporting Tools</p>
 - **cutycapt**
 - **faraday start**
 - **record my desktop**
 
-<p align="left"> 13 Social Engineering Tools</p>
+# <p align="left"> 13 Social Engineering Tools</p>
 - **msfpayload creator**
 - **social engineering toolkit(root)**
 
