@@ -3,25 +3,32 @@
 - **dnsrecon**
 - **dnsenum**
 - **fierce**
+
 ## **IDS/IPS Identification**
 - **lbd**
-- **waafwOOf**
+- **Wafw00f**
+
 ## **Live Host Identification**
 - **fping**
 - **arping**
 - **hping3**
+
 ## **Network and Port Scanners**
 - **masscan**
 - **nmap**
+
 ## **OSINT Analysis**
 - **spiderfoot**
 - **theharvester**
+
 ## **Route Analysis**
 - **netdiscover**
 - **netmask**
+
 ## **SMB Analysis**
 - **enum4linux**
 - **nbtscan**
+
 ## **SSL Analysis**
 - **dmitry**
 - **recon-ng**
@@ -32,18 +39,22 @@
 - **spike-generic_chunked**
 - **spike-generic_listen_tcp**
 - **spike-generic_listen_tcp**
+
 ## **VoIP Tools**
 - **voiphopper**
 
 # <p align="left"> 03 Web Application Analysis</p>
 ## **CMS & Framework Identification**
 - **wpscan**
+
 ## **Web Application Proxies**
 - **burpsuite**
+
 ## **Web Crawlers & Directroty Bruteforce**
 - **cutyapt**
 - **dirb**
 - **wfuzz**
+
 ## **Web Vulnerability Scanners**
 - **cadaver**
 - **davtest**
@@ -57,14 +68,17 @@
 - **hashcat**
 - **hashid**
 - **hash identifier**
+
 ## **Online Attacks**
 - **hydra**
 - **patator**
 - **onesixtyone**
+
 ## **Passing the Hash Tools**
 - **mimiKatz**
 - **pth-curl**
 - **pth-net**
+
 ## **Password Profiling & Worldlists**
 - **cewl**
 - **crunch**
@@ -99,7 +113,6 @@
 - **rebind**
 - **sslsplit**
 - **tcpreplay**
-
 
 # <p align="left"> 10 Post Exploitation</p>
 ## **OS Backdoors**
