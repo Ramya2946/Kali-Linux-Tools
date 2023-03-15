@@ -1,6 +1,10 @@
 # <p align="left"> 01 Information Gathering </p>
 ## **DNS Analysis**
 - **dnsrecon**
+<p> DNSRecon is a Python script that provides the ability to perform:
+
+Check all NS Records for Zone Transfers and enumerate General DNS Records for a given Domain (MX, SOA, NS, A, AAAA, SPF and TXT).It perform common SRV Record Enumeration,Top Level Domain (TLD) Expansion and Check for Wildcard Resolution.
+Brute Force subdomain and host A and AAAA records given a domain and a wordlist,it performs a PTR Record lookup for a given IP Range or CIDR,Checks if a DNS Server Cached records for A, AAAA and CNAME and records provided a list of host records in a text file to check.</p>
 - **dnsenum**
 - **fierce**
 
