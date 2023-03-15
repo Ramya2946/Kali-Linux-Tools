@@ -74,7 +74,7 @@
 ## **802.11 Wireless Tools**
 - **bully**
 - **fern wifi cracker(root)**
-- 
+ 
 ## **Bluetooth Tools**
 - **aircrack-ng**
 - **spooftooph**
