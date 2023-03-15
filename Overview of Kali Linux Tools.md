@@ -121,36 +121,94 @@ Features of Legion Tool:</p>
 # <p align="left"> 03 Web Application Analysis</p>
 ## **CMS & Framework Identification**
 - **wpscan**
+<p>Wpscan is a vulnerability scanning tool and it can perform brute force attack on the supplied URL. The wpscan works for both HTTP and HTTPS sites. If not provided, it takes HTTP by default.
+Features and Utilities:</p>
+<p>Checking the version of WordPress used and associated vulnerabilities for that version.</p>
+<p>Checks for database dumps that may be openly accessible.</p>
+<p>Checks for the WordPress README file.</p>
+<p>Brute force usernames and passwords if possible.</p>
 
 ## **Web Application Proxies**
 - **burpsuite**
+<p>Burp Suite is an integrated platform/graphical tool for performing security testing of web applications. Its various tools work seamlessly together to support the entire testing process, from initial mapping and analysis of an application's attack surface, through to finding and exploiting security vulnerabilities.BurpSuite aims to be an all in one set of tools and its capabilities can be enhanced by installing add-ons that are called BApps.
+It is the most popular tool among professional web app security researchers and bug bounty hunters. Its ease of use makes it a more suitable choice over free alternatives like OWASP ZAP.</p>
+
 
 ## **Web Crawlers & Directroty Bruteforce**
 - **cutyapt**
+<p>CutyCapt is a small cross-platform command-line utility to capture WebKit's rendering of a web page into a variety of vector and bitmap formats, including SVG, PDF, PS, PNG, JPEG, TIFF, GIF, and BMP.CutyCapt has many other options to try out like max-wait and delay time and many other things.</p>
+
 - **dirb**
+<p>It is a Web Content Scanner. It looks for existing (and/or hidden) Web Objects. It basically works by launching a dictionary based attack against a web server and analyzing the responses. DIRB comes with a set of preconfigured attack wordlists for easy usage but you can use your custom wordlists.DIRB can recursively scan directories and look for files with different extensions in a web server. It can automatically detect the Not Found code when it's not the standard 404. It can then export the results to a text file, use session cookies in case the server requires having a valid session, and conduct basic HTTP authentication and upstream proxy among other features.</p>
+
 - **wfuzz**
+<p>It is a tool designed for bruteforcing Web Applications, it can be used for finding resources not linked directories, servlets, scripts, etc, bruteforce GET and POST parameters for checking different kind of injections (SQL, XSS, LDAP,etc), bruteforce Forms parameters (User/Password), Fuzzing, etc.It is used to discover common vulnerabilities in web applications through the method of fuzzing. Fuzzing is the concept of trying many known vulnerable inputs with a web application to determine if any of the inputs compromise the web application. It is a great tool to be able to quickly check common vulnerabilities against an application. It is also valuable for testing previously reported vulnerabilities to ensure that regressions don’t occur in an application.</p>
 
 ## **Web Vulnerability Scanners**
 - **cadaver**
+<p>It supports file upload, download, on-screen display, in-place editing, namespace operations (move/copy), collection creation and deletion, property manipulation, and resource locking.
+Its operation is similar to the standard BSD ftp(1) client and the Samba Project’s smbclient(1) and includes GnuTLS (HTTPS) support.
+WebDAV (Web-based Distributed Authoring and Versioning) is a set of extensions to the HTTP protocol which allow users to collaboratively edit and manage files on remote web servers.</p>
+
 - **davtest**
+<p>It tests WebDAV enabled servers by uploading test executable files, and then (optionally) uploading files which allow for command execution or other actions directly on the target. It is meant for penetration testers to quickly and easily determine if enabled DAV services are exploitable.WebDAV is a network protocol which stands for Web-based Distributed Authoring and Versioning that in simpler terms can be said that it is an extension to the HTTP methods and headers which offers the ability to create files and folders, and allow to edit, delete or move them remotely. It also allows transmitting of these files over the internet. It uses port 80 for a simple and an unencrypted connection and makes use of SSL/TLS on port 443 for an encrypted connection.</p>
+
 - **wapiti**
+<p>Wapiti allows you to audit the security of your web applications. It performs “black-box” scans, i.e. it does not study the source code of the application but will scan the web pages of the deployed web applications, looking for scripts and forms where it can inject data. Once it gets this list, Wapiti acts like a fuzzer, injecting payloads to see if a script is vulnerable.
+
+Wapiti can detect the following vulnerabilities:</p>
+
+<p>Database Injection (PHP/ASP/JSP SQL Injections and XPath Injections)</p>
+<p>Cross Site Scripting (XSS) reflected and permanent</p>
+<p>File disclosure detection (local and remote include, require, fopen, readfile…)</p>
+<p>Command Execution detection (eval(), system(), passtru()…)</p>
+<p>XXE (Xml eXternal Entity) injection</p>
 
 # <p align="left"> 04 Database Assessment</p>
 - **sqlmap**
 
+<p>sqlmap goal is to detect and take advantage of SQL injection vulnerabilities in web applications. Once it detects one or more SQL injections on the target host, the user can choose among a variety of options to perform an extensive back-end database management system fingerprint, retrieve DBMS session user and database, enumerate users, password hashes, privileges, databases, dump entire or user’s specific DBMS tables/columns, run his own SQL statement, read specific files on the file system and more.</p>
+
 # <p align="left"> 05 Password Attacks</p>
 ## **Offline Attacks**
 - **hashcat**
+<p>Hashcat is famous as the fastest password cracker and password recovery utility. Hashcat is designed to break or crack even the most complex passwords in a very less amount of time.
+
+Features of hashcat:</p>
+<p>Hashcat is a multi-algorithm based ( MD5, MD4, MySQL, SHA1, NTLM, DCC, etc.).</p>
+<p>All attacks can be extended by specialized rules.</p>
+<p>The number of threads can be configured.</p>
+ 
 - **hashid**
+<p>Identify the different types of hashes used to encrypt data and especially passwords.
+
+hashID is a tool written in Python 3.x which supports the identification of over 175 unique hash types using regular expressions. It is able to identify a single hash or parse a file and identify the hashes within it. There is also a nodejs version of hashID available which is easily set up to provide online hash identification.</p>
+
 - **hash identifier**
+<p>Software to identify the different types of hashes used to encrypt data and especially passwords.</p>
 
 ## **Online Attacks**
 - **hydra**
+<p>Hydra is a parallelized login cracker which supports numerous protocols to attack. It is very fast and flexible, and new modules are easy to add.
+This tool makes it possible for researchers and security consultants to show how easy it would be to gain unauthorized access to a system remotely.
+It supports: Cisco AAA, Cisco auth, Cisco enable, CVS, FTP, HTTP(S)-FORM-GET, HTTP(S)-FORM-POST, HTTP(S)-GET, HTTP(S)-HEAD, HTTP-Proxy, ICQ, IMAP, IRC, LDAP, MS-SQL, MySQL, NNTP, Oracle Listener, Oracle SID, PC-Anywhere, PC-NFS, POP3, PostgreSQL, RDP, Rexec, Rlogin, Rsh, SIP, SMB(NT), SMTP</p>
+
 - **patator**
+<p>Patator is a multi-purpose brute-forcer, with a modular design and a flexible usage.
+Currently it supports the following modules:</p>
+
+<p>ftp_login : Brute-force FTP</p>
+<p>ssh_login : Brute-force SSH</p>
+<p>telnet_login : Brute-force Telnet</p>
+<p>smtp_login : Brute-force SMTP</p>
+<p>smtp_vrfy : Enumerate valid users using SMTP VRFY</p>
+
 - **onesixtyone**
+<p>It is a simple SNMP scanner which sends SNMP requests for the sysDescr value asynchronously with user-adjustable sending times and then logs the responses which gives the description of the software running on the device.Running onesixtyone on a class B network (switched 100Mbs with 1Gbs backbone) with -w 10 gives a performance of 3 seconds per class C, with no dropped packets, and all 65536 IP addresses were scanned in less than 13 minutes.</p>
 
 ## **Passing the Hash Tools**
 - **mimiKatz**
+<p>
 - **pth-curl**
 - **pth-net**
 
