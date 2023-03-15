@@ -30,27 +30,67 @@ If a DNS Server Cached records for A, AAAA and CNAME,it check all NS Records for
 
 ## **Live Host Identification**
 - **fping**
--<p>ping is a ping like program which uses the Internet Control Message Protocol (ICMP) echo request to determine if a target host is responding. fping differs from ping in that you can specify any number of targets on the command line, or specify a file containing the lists of targets to ping. Instead of sending to one target until it times out or replies, fping will send out a ping packet and move on to the next target in a round-robin fashion.</p>
+<p>ping is a ping like program which uses the Internet Control Message Protocol (ICMP) echo request to determine if a target host is responding. fping differs from ping in that you can specify any number of targets on the command line, or specify a file containing the lists of targets to ping. Instead of sending to one target until it times out or replies, fping will send out a ping packet and move on to the next target in a round-robin fashion.</p>
 
 - **arping**
 <p>The arping utility sends ARP and/or ICMP requests to the specified host and displays the replies. The host may be specified by its hostname, its IP address, or its MAC address.Arping operates work at the layer 2 (or the link layer of the OSI model) using the Address Resolution Protocol (ARP) for probing hosts. Since ARP is non-routable, this only works for the local network.</p>
 
 - **hping3**
+<p>It is a network tool able to send custom ICMP/UDP/TCP packets and to display target replies like ping does with ICMP replies. It handles fragmentation and arbitrary packet body and size, and can be used to transfer files under supported protocols. Using hping3, you can test firewall rules, perform (spoofed) port scanning, test network performance using different protocols, do path MTU discovery, perform traceroute-like actions under different protocols, fingerprint remote operating systems, audit TCP/IP stacks, etc. hping3 is scriptable using the Tcl language.</p>
 
 ## **Network and Port Scanners**
 - **masscan**
+MASSCAN is TCP port scanner which transmits SYN packets asynchronously and produces results similar to nmap, the most famous port scanner. Internally, it operates more like scanrand, unicornscan, and ZMap, using asynchronous transmission. It’s a flexible utility that allows arbitrary address and port ranges.
+
+<p>Scalable: Probably the most important feature of Masscan is its ability to transmit up to 10 million packets per second through its asynchronous architecture.</p>
+<p>Portability: The software can be compiled and run on all three major operating systems: Windows, MacOS and Linux.</p>
+<p>Banner checking: Apart from merely performing port scans, the tool can also complete TCP connections to fetch basic banner information.</p>
+<p>Nmap Compatibility: Masscan was developed with the goal of making the tool's usage and output as similar to Nmap's as possible. This enables users to translate their Nmap knowledge quickly.</p>
+
 - **nmap**
+<p>Nmap is a utility for network exploration or security auditing. It supports ping scanning (determine which hosts are up), many port scanning techniques, version detection (determine service protocols and application versions listening behind ports), and TCP/IP fingerprinting (remote host OS or device identification).
+
+<p>Real time information of a network</p>
+<p>Detailed information of all the IPs activated on your network</p>
+<p>Number of ports open in a network</p>
+<p>Provide the list of live hosts</p>
+<p>Port, OS and Host scanning</p>
 
 ## **OSINT Analysis**
 - **spiderfoot**
+<p>This package contains an open source intelligence (OSINT) automation tool. Its goal is to automate the process of gathering intelligence about a given target, which may be an IP address, domain name, hostname, network subnet, ASN, e-mail address or person’s name.
+
+SpiderFoot can be used offensively, i.e. as part of a black-box penetration test to gather information about the target, or defensively to identify what information you or your organisation are freely providing for attackers to use against you.</p>
+
 - **theharvester**
+<p>It contains a tool for gathering subdomain names, e-mail addresses, virtual hosts, open ports/ banners, and employee names from different public sources (search engines, pgp key servers).It also has the capability of doing DNS brute force, reverse IP resolution, and Top-Level Domain (TLD) expansion</p>
 
 ## **Route Analysis**
 - **netdiscover**
+<p>Netdiscover is an active/passive address reconnaissance tool, mainly developed for those wireless networks without dhcp server, when you are wardriving. It can be also used on hub/switched networks.
+
+Built on top of libnet and libpcap, it can passively detect online hosts, or search for them, by actively sending ARP requests.
+
+Netdiscover can also be used to inspect your network ARP traffic, or find network addresses using auto scan mode, which will scan for common local networks.
+
+Netdiscover uses the OUI table to show the vendor of the each MAC address discovered and is very useful for security checks or in pentests.</p>
+
 - **netmask**
+<p>It is a tiny program handy if you work with firewalls or routers occasionally (possibly using this as a helper for shell scripts). It can determine the smallest set of network masks to specify a range of hosts. It can also convert between common IP netmask and address formats.</p>
 
 ## **SMB Analysis**
 - **enum4linux**
+<p>Enum4linux is a tool for enumerating information from Windows and Samba systems.
+
+It is written in PERL and is basically a wrapper around the Samba tools smbclient, rpclient, net and nmblookup.
+Enum4linux is capable of discovering the following:</p>
+
+<p>Password policies on a target</p>
+<p>The operating system of a remote target</p>
+<p>Shares on a device (drives and folders)</p>
+<p>Domain and group membership</p>
+<p>User listings</p>
+ 
 - **nbtscan**
 
 ## **SSL Analysis**
