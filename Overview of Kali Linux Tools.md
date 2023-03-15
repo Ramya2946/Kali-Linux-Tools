@@ -95,17 +95,28 @@ Enum4linux is capable of discovering the following:</p>
 
 ## **SSL Analysis**
 - **dmitry**
+<p>It is a free and open-source tool available on GitHub. The tool is used for information gathering. You can download the tool and install in your Kali Linux. Dmitry stands for DeepMagic Information Gathering Tool. It’s a command-line tool Using Dmitry tool You can collect information about the target, this information can be used for social engineering attacks. It can be used to gather a number of valuable pieces of information.</p>
+
 - **recon-ng**
+<p>Recon-ng is a reconnaissance / OSINT tool with an interface similar to Metasploit. Running recon-ng from the command line speeds up the recon process as it automates gathering information from open sources. Recon-ng has a variety of options to configure, perform recon, and output results to different report types.It has so many modules, database interaction, built-in convenience functions, interactive help, and command completion, Recon-ng provides a powerful environment in which open source web-based reconnaissance can be conducted, and we can gather all information.</p>
+ 
 - **legion(root)**
+<p>Legion tool is a super-extensible and semi-automated network penetration testing framework. Legion is very easy to operate. 
+
+Features of Legion Tool:</p>
+
+<p>GUI with panels and a long list of options that allow pentesters to quickly find and exploit attack vectors on hosts.</p>
+<p>It has the feature of real-time auto-saving of project results and tasks.</p>
+<p>Legion also provides services like Automatic recon and scanning with NMAP, whataweb, sslyzer, Vulners, webslayer, SMBenum, dirbuster, nikto, Hydra, and almost 100 auto-scheduled scripts are added to it.</p>
 
 # <p align="left"> 02 Vulnerability Analysis</p>
 ## **Fuzzing Analysis**
 - **spike-generic_chunked**
-- **spike-generic_listen_tcp**
-- **spike-generic_listen_tcp**
+<p>SPIKE is actually a fuzzer creation kit, providing an API that allows a user to create their own fuzzers for network based protocols using the C programming language. SPIKE defines a number of primitives that it makes available to C coders, which allows it to construct fuzzed messages called “SPIKES” that can be sent to a network service to hopefully induce errors.</p>
 
 ## **VoIP Tools**
 - **voiphopper**
+<p>It is a GPLv3 licensed security tool, written in C that rapidly runs a VLAN Hop security test. VoIP Hopper is a VoIP infrastructure security testing tool but also a tool that can be used to test the (in)security of VLANs</p>
 
 # <p align="left"> 03 Web Application Analysis</p>
 ## **CMS & Framework Identification**
