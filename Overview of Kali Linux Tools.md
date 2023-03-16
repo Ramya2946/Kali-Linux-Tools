@@ -246,28 +246,57 @@ It mainly focuses on 4 areas:</p>
 
 # <p align="left"> 07 Reverse Engineering</p>
 - **clang**
+<p>Clang project is a C, C++, Objective C and Objective C++ front-end for the LLVM compiler. Its goal is to offer a replacement to the GNU Compiler Collection (GCC).Clang implements all of the ISO C++ 1998, 11 and 14 standards and also provides most of the support of C++17.
+This is a dependency package providing the default clang compiler.</p>
+
 - **NASM shell**
+<p>Netwide Assembler. NASM will currently output flat-form binary files, a.out, COFF and ELF Unix object files, and Microsoft 16-bit DOS and Win32 object files.
+Also included is NDISASM, a prototype x86 binary-file disassembler which uses the same instruction table as NASM.NASM is released under the GNU Lesser General Public License (LGPL).Most programs consist of directives followed by one or more sections. Lines can have an optional label. Most lines have an instruction followed by zero or more operands.</p>
 
 
 # <p align="left"> 08 Exploitation Tools</p>
 - **crackmapexec**
+-<p>This package is a swiss army knife for pentesting Windows/Active Directory environments.From enumerating logged on users and spidering SMB shares to executing psexec style attacks, auto-injecting Mimikatz/Shellcode/DLL’s into memory using Powershell, dumping the NTDS.dit and more.
+The biggest improvements over the above tools are:</p>
+
+<p>Pure Python script, no external tools required</p>
+<p>Fully concurrent threading</p>
+<p>Uses ONLY native WinAPI calls for discovering sessions, users, dumping SAM hashes etc…</p>
+<p>Opsec safe (no binaries are uploaded to dump clear-text credentials, inject shellcode etc…)</p>
+<p>Additionally, a database is used to store used/dumped credentals. It also automatically correlates Admin credentials to hosts and vice-versa allowing you to easily keep track of credential sets and gain additional situational awareness in large environments.</p>
+ 
 - **metasploit framework**
+<p>The Metasploit Framework is an open source platform that supports vulnerability research, exploit development, and the creation of custom security tools.
+  Metasploit framework that allows red teamers to perform reconnaissance, scan, enumerate, and exploit vulnerabilities for all types of applications, networks, servers, operating systems, and platforms.Even though the main functionality of Metasploit focuses on pre- and post-exploitation pentesting tasks, it is also helpful in exploit development and vulnerability research.</p>
+  
 - **msf payload creator**
+<p>MSFvenom Payload Creator (MSFPC) is a wrapper to generate multiple types of payloads, based on the user’s choice. The idea is to be as simple as possible (only requiring one input) to produce their payload.</p>
 
 # <p align="left"> 09 Sniffing & Spoofing</p>
 ## **Network Sniffers**
 - **dnschef**
+<p>DNSChef is a highly configurable DNS proxy for Penetration Testers and Malware Analysts. A DNS proxy (aka “Fake DNS”) is a tool used for application network traffic analysis among other uses. For example, a DNS proxy can be used to fake requests for “badguy.com” to point to a local machine for termination or interception instead of a real host somewhere on the Internet.Domain Name System (DNS) is a distributed naming system for computers, services, or any resource connected to the Internet or private network. Providing fake DNS addresses can redirect traffic to other desired locations.</p>
+
 - **netsniff-ng**
- 
-## **Spoofing & MITM**
+<p>netsniff-ng is a free Linux network analyzer and networking toolkit originally written by Daniel Borkmann. Its gain of performance is reached by zero-copy mechanisms for network packets, so that the Linux kernel does not need to copy packets from kernel space to user space via system calls such as recvmsg.A fast zero-copy analyzer, pcap capturing and replaying tool</p>
+
+ ## **Spoofing & MITM**
 - **rebind**
+<p>Rebind is a tool that implements the multiple A record DNS rebinding attack. Although this tool was originally written to target home routers, it can be used to target any public (non RFC1918) IP address.Rebind provides an external attacker access to a target router’s internal Web interface. This tool works on routers that implement the weak end system model in their IP stack, have specifically configured firewall rules, and who bind their Web service to the router’s WAN interface. Note that remote administration does not need to be enabled for this attack to work. All that is required is that a user inside the target network surf to a Web site that is controlled, or has been compromised, by the attacker.</p>
+
 - **sslsplit**
+<p>SSLsplit is a tool for man-in-the-middle attacks against SSL/TLS encrypted network connections. Connections are transparently intercepted through a network address translation engine and redirected to SSLsplit.It complements a MITM attack and extract information from an encrypted communication.</p>
+
 - **tcpreplay**
+<p>Tcpreplay is aimed at testing the performance of a NIDS by replaying real background network traffic in which to hide attacks. Tcpreplay allows you to control the speed at which the traffic is replayed, and can replay arbitrary tcpdump traces. Unlike programmatically-generated artificial traffic which doesn’t exercise the application/protocol inspection that a NIDS performs, and doesn’t reproduce the real-world anomalies that appear on production networks (asymmetric routes, traffic bursts/lulls, fragmentation, retransmissions, etc.), tcpreplay allows for exact replication of real traffic seen on real networks. It included the following executables tcpprep, tcprewrite, tcpreplay-edit, tcpbridge and pcap based captures are possible.</p>
 
 # <p align="left"> 10 Post Exploitation</p>
 ## **OS Backdoors**
 - **dbd**
+<p>dbd is a Netcat-clone, designed to be portable and offer strong encryption. It runs on Unix-like operating systems and on Microsoft Win32. dbd features AES-CBC-128 + HMAC-SHA1 encryption (by Christophe Devine), program execution (-e option), choosing source port, continuous reconnection with delay, and some other nice features. dbd supports TCP/IP communication only. Source code and binaries are distributed under the GNU General Public License.</p>
+
 - **powersploit**
+ <p>PowerSploit is a series of Microsoft PowerShell scripts that can be used in post-exploitation scenarios during authorized penetration tests.It is an open source, offensive security framework comprised of PowerShell modules and scripts that perform a wide range of tasks related to penetration testing such as code execution, persistence, bypassing anti-virus, recon, and exfiltration.</p>
  
 ## **Tunneling & Exfiltration**
 - **dns2tcpc**
