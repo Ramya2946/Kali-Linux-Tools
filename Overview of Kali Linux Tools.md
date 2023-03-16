@@ -300,12 +300,25 @@ The biggest improvements over the above tools are:</p>
  
 ## **Tunneling & Exfiltration**
 - **dns2tcpc**
+<p>dns2tcp is using dns (asking for TXT records within a (sub)domain) to archive the goal we need to create a NS record for a new subdomain pointing to the address of our server : dns2tcp.kali.org. IN NS lab.kali.org.There is no need for a DNS server installation. It is a tool for relaying TCP connections over DNS. Among other things, it can be used to bypass captive portals (e.g. hotels, airport, ...) when only port 53/udp is allowed by the firewall.</p>
+<p>The client starts dns2tcpc (dns2tcp client) and requires the remote ssh resource (-r ssh) through local port 2222/tcp (-l 2222). </p>
+<p>It encapsulates the TCP traffic into fake DNS requests. Then, it opens a SOCKS proxy on port 1080 through the previously created tunnel.</p>
+<p>he fake DNS requests are delegated to the remote dns2tcp server that decapsulates the fake requests and send the request to the requested resource.</p>
+<p>The response is sent to the remote dns2tcp server that encapsulates it into fake DNS responses</p>
+<p>The client decapsulates the fake DNS response and serves the HTTP response.</p>
+
 - **iodine**
+<p>Iodine is a tool for tunneling Internet protocol version 4 (IPV4) traffic over the DNS protocol to circumvent firewalls, network security groups, and network access lists while evading detection.</p>
+ 
 - **pwnat**
+<p>pwnat, pronounced “poe-nat”, is a tool that allows any number of clients behind NATs to communicate with a server behind a separate NAT with no port forwarding and no DMZ setup on any routers in order to directly communicate with each other. The server does not need to know anything about the clients trying to connect.	It is a NAT to NAT client-server communication.</p>
 
 ## **Web Backdoors**
 - **laundanum**
+<p>Laudanum is a collection of injectable files, designed to be used in a pentest when SQL injection flaws are found and are in multiple languages for different environments.They provide functionality such as shell, DNS query, LDAP retrieval and others.audanum is not an application, but rather a repository of inject-able files.  On its own, it doesn’t do anything.  These files can be deployed to a target machine and then executed to perform specific functionality</p>
+
 - **weevely**
+<p>Weevely is a stealth PHP web shell that simulate telnet-like connection. It is an essential tool for web application post exploitation, and can be used as stealth backdoor or as a web shell to manage legit web accounts, even free hosted ones.Its terminal executes arbitrary remote code through the small footprint PHP agent that sits on the HTTP server. Over 30 modules shape an adaptable web administration and post-exploitation backdoor for access maintenance, privilege escalation, and network lateral movement, even in the restricted environment.</p>
 
 # <p align="left"> 11 Forensics</p>
 ## **Forensic Craving Tools**
