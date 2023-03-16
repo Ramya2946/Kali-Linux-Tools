@@ -323,29 +323,46 @@ The biggest improvements over the above tools are:</p>
 # <p align="left"> 11 Forensics</p>
 ## **Forensic Craving Tools**
 - **magicrescue**
+<p>Magic Rescue scans a block device for file types it knows how to recover and calls an external program to extract them. It looks at “magic bytes” (file patterns) in file contents, so it can be used both as an undelete utility and for recovering a corrupted drive or partition. As long as the file data is there, it will find it.Magic Rescue uses files called ‘recipes’. These files have strings and commands to identify and extract data from devices or forensics images. So, you can write your own recipes. Currently, there are the following recipes: avi, canon-cr2, elf, flac, gpl, gzip, jpeg-exif, jpeg-jfif, mbox, mbox-mozilla-inbox, mbox-mozilla-sent, mp3-id3v1, mp3-id3v2, msoffice, nikon-raw, perl, png, ppm, sqlite and zip.</p>
+
 - **scalpel**
+<p>scalpel is a fast file carver that reads a database of header and footer definitions and extracts matching files from a set of image files or raw device files. scalpel is filesystem-independent and will carve files from FAT16, FAT32, exFAT, NTFS, Ext2, Ext3, Ext4, JFS, XFS, ReiserFS, raw partitions, etc. Scalpel aims to address the high CPU and RAM usage issues of Foremost when carving data.This forensic tool carves all the files and indexes those applications which run on Linux and windows. It supports multithreading execution on multiple core systems, which help in quick executions. File carving is performed in fragments such as regular expressions or binary strings.</p>
+
 - **scorunge-ntfs**
-- 
+<p>Scrounge NTFS is a data recovery program for NTFS filesystems. It reads each block of the hard disk and try to rebuild the original filesystem tree into a directory. This package is useful in forensics investigations.It helps in retrieving data from corrupted NTFS disks or partitions. It rescues data from a corrupted file system to a new working file system.</p>
+
 ## **Forensic Imaging Tools**
 - **guymager(root)**
+<p>This forensic utility is used to acquire media for forensic imagery and has a graphical user interface. Due to its multi-threaded data processing and compression, it is a very fast tool. This tool also supports cloning. It generates flat, AFF, and EWF images. The UI is very easy to use.The forensic imager contained in this package, guymager, was designed to support different image file formats, to be most user-friendly and to run really fast.</p>
 
 ## **PDF Forensics Tools**
 - **pdfid**
+<p>This forensic tool is used in pdf files. The tool scans pdf files for specific keywords, which allows you to identify executable codes when opened. This tool solves the basic problems associated with pdf files. The suspicious files are then analyzed with the pdf-parser tool.This tool is not a PDF parser, but it will scan a file to look for certain PDF keywords, allowing you to identify PDF documents that contain (for example) JavaScript or execute an action when opened. PDFiD will also handle name obfuscation.</p>
+
 - **pdf-parser**
+<p>This tool is one of the most important forensic tools for pdf files. pdf-parser parses a pdf document and distinguishes the important elements utilized during its analysis, and this tool does not render that pdf document.This tool will parse a PDF document to identify the fundamental elements used in the analyzed file. It will not render a PDF document.</p>
 
 ## **Sleuth Kit Suite**
 - **autopsy(root)**
+<p>An autopsy is all in one forensic utility for fast data recovery and hash filtering. This tool carves deleted files and media from unallocated space using PhotoRec. It can also extract EXIF extension multimedia. Autopsy scans for compromise indicator using STIX library. It is available in the command line as well as GUI interface.The Autopsy Forensic Browser is a graphical interface to the command line digital forensic analysis tools in The Sleuth Kit. Together, The Sleuth Kit and Autopsy provide many of the same features as commercial digital forensics tools for the analysis of Windows and UNIX file systems (NTFS, FAT, FFS, EXT2FS, and EXT3FS)</p>
+
 - **blkcat**
+<p>The blkcat tool is a quick and efficient forensic tool packaged inside Kali. The purpose of this tool is to display the contents of the data stored in a file system’s disk image. The output displays the number of data units, starting with the unit’s main address and prints, into different formats that can be specified and sorted. By default, the output format is raw, and it is also called dcat.</p>
+
 - **blkcalc**
+<p>The blkcalc tool is a forensic tool that converts unallocated disk points to regular disk points. This program creates a point number that maps two images. One of these images is normal, and the other contains unallocated point numbers of the first image. This tool can support many file system types. If a file system is not defined at the start, blkcalc has the unique feature of autodetection methods to find the file system type.</p>
 
 # <p align="left"> 12 Reporting Tools</p>
-- **cutycapt**
+
 - **faraday start**
+<p>Faraday is a GUI application that consists of a ZSH terminal and a sidebar with details about your workspaces and hosts.When Faraday supports the command you are running, it will automatically detect it and import the results. In the example below, the original nmap command that was entered was nmap -A 192.168.0.7, which Faraday converted on the fly.</p>
+
 - **record my desktop**
+<p>The application produces an ogg-encapsulated theora-vorbis file. recordMyDesktop tries to be as unobstrusive as possible by proccessing only regions of the screen that have changed.The program is separated into two parts; a command line tool that performs the tasks of capturing and encoding, and an interface that exposes the program functionality graphically. There are two front-ends written in python with pyGtk (gtk-recordMyDesktop) and pyQt4 (qt-recordMyDesktop). RecordMyDesktop also offers the ability to record audio through ALSA, OSS or the JACK audio server. RecordMyDesktop only outputs to Ogg using Theora for video and Vorbis for audi</p>
 
 # <p align="left"> 13 Social Engineering Tools</p>
-- **msfpayload creator**
 - **social engineering toolkit(root)**
+<p>The Social-Engineer Toolkit (SET) is an open-source penetration testing framework designed for social engineering. SET has a number of custom attack vectors that allow you to make a believable attack in a fraction of time. These kind of tools use human behaviors to trick them to the attack vectors.</p>
 
 
 
